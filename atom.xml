@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我爱樱花的博客</title>
+  
+  
+  <link href="https://52sakura.cn/atom.xml" rel="self"/>
+  
+  <link href="https://52sakura.cn/"/>
+  <updated>2021-03-12T06:13:39.874Z</updated>
+  <id>https://52sakura.cn/</id>
+  
+  <author>
+    <name>Emiya</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://52sakura.cn/2020/06/05/[%E5%BC%80%E6%BA%90]typecho%E6%96%87%E7%AB%A0%E6%89%93%E8%B5%8F%E6%8F%92%E4%BB%B6/"/>
+    <id>https://52sakura.cn/2020/06/05/[%E5%BC%80%E6%BA%90]typecho%E6%96%87%E7%AB%A0%E6%89%93%E8%B5%8F%E6%8F%92%E4%BB%B6/</id>
+    <published>2020-06-05T09:53:39.440Z</published>
+    <updated>2021-03-12T06:13:39.874Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title:[开源]typecho文章打赏插件<br>date:2021-03-12 13:31:48<br>tags:技术笔记</p><hr><h1 id="开源-typecho文章打赏插件"><a href="#开源-typecho文章打赏插件" class="headerlink" title="[开源]typecho文章打赏插件"></a>[开源]typecho文章打赏插件</h1><p>开源协议： Apache License 2.0<br>开源地址：<a href="https://github.com/roomanl/typecho-plugin">typecho-plugin</a></p><p>作者：<a href="http://rootvip.cn/archives/39.html#comment-45">山顶洞洞人</a></p><p>解压放到usr/plugins目录下，后台启用即可<br>然后在主题下面post.php文件里的文章末尾添加如下代码</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> Typecho_Plugin::factory(<span class="string">&#x27;rootvip.cn.Donate&#x27;</span>)-&gt;Donate(); <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://sddman.oss-cn-shenzhen.aliyuncs.com/typecho/TIM%E6%88%AA%E5%9B%BE20200403181241.jpg" alt="请输入图片描述"></p><p>插件配置如下：<br><img src="https://sddman.oss-cn-shenzhen.aliyuncs.com/typecho/TIM%E6%88%AA%E5%9B%BE20200403181339.jpg" alt="请输入图片描述"></p><p>效果：</p><p><img src="C:\Users\23333\AppData\Roaming\Typora\typora-user-images\image-20200605175306026.png" alt="image-20200605175306026"></p><p>如果typecho主题中开启了pjax，请在<code>&lt;?php Typecho_Plugin::factory(&#39;rootvip.cn.Donate&#39;)-&gt;Donate(); ?&gt;</code>下面加以下代码：</p><p><code>&lt;?php echo&#39;&lt;script&gt;initDonate()&lt;/script&gt;&#39;?&gt;</code></p><p><img src="C:\Users\23333\AppData\Roaming\Typora\typora-user-images\image-20200605174257483.png" alt="image-20200605174257483"></p><p>即可畅享丝滑，博主使用至今没有出现别的bug了，用着很舒服=-=</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title:[开源]typecho文章打赏插件&lt;br&gt;date:2021-03-12 13:31:48&lt;br&gt;tags:技术笔记&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;开源-typecho文章打赏插件&quot;&gt;&lt;a href=&quot;#开源-typecho文章打赏插件&quot; clas</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
