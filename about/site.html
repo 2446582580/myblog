@@ -39,7 +39,26 @@
 </ul>
 <h2 id="性格"><a href="#性格" class="headerlink" title="性格"></a>性格</h2><p>矛盾(真香)纠结体，喜爱小米系统折腾手机，折腾电脑等，感觉折腾就是一种乐趣<br>宅性格内向。</p>
 <h2 id="。。"><a href="#。。" class="headerlink" title="。。"></a>。。</h2><p>其实还有很多东西。。只是说不出来了</p>
-</div></section></article></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
+</div></section></article></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><div class="toggle-comment-system" style="margin: 1rem auto"><a class="toggle-comment-btn hty-button hty-button--raised text-uppercase" data-target="#valine-container" onclick="showComment(this.dataset.target)">valine</a><style>.utterances {
+  display: none;
+}</style><a class="toggle-comment-btn hty-button hty-button--raised text-uppercase" data-target=".utterances" onclick="showComment(this.dataset.target)">utterances</a><script>function hideAllComment() {
+  //- hide all
+  document.querySelectorAll('.toggle-comment-btn').forEach((btn) => {
+    const container = document.querySelector(btn.dataset.target);
+    if (container) {
+      container.style.display = "none";
+    }
+  });
+}
+function showComment(target) {
+  hideAllComment();
+  //- show target
+  const targetContainer = document.querySelector(target);
+  if (targetContainer) {
+    targetContainer.style.display = "block";
+  }
+}
+</script></div></div><div id="valine-container"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js", () => {
   const valineConfig = {"enable":true,"appId":"3vGP5CJCJ6K3OMinJMCPNKuN-MdYXbMMI","appKey":"RYX42nNq9jel7YzLJBW9kQdk","placeholder":"填写邮箱，可以收到回复通知哦~","avatar":null,"meta":["nick","mail","link"],"pageSize":10,"visitor":false,"highlight":true,"recordIP":false,"enableQQ":true,"el":"#valine-container","lang":"zh-cn"}
   valineConfig.path = window.location.pathname
   new Valine(valineConfig)
